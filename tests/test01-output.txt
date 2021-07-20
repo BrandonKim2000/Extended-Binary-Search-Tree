@@ -1,0 +1,119 @@
+insert(IAD): successful {Washington Dulles International, Washington, USA, (38.0,-77.0)}
+Preorder list:
+  [IAD Washington]
+Tree structure:
+  [IAD Washington]
+insert(BWI): successful {Baltimore Washington International, Baltimore, USA, (39.0,-76.0)}
+Preorder list:
+  (IAD)
+  [BWI Baltimore]
+  [IAD Washington]
+Tree structure:
+  | [BWI Baltimore]
+  (IAD)
+  | [IAD Washington]
+insert(LAX): successful {Los Angeles International, Los Angeles, USA, (33.0,-118.0)}
+Preorder list:
+  (IAD)
+  [BWI Baltimore]
+  (LAX)
+  [IAD Washington]
+  [LAX Los Angeles]
+Tree structure:
+  | [BWI Baltimore]
+  (IAD)
+  | | [IAD Washington]
+  | (LAX)
+  | | [LAX Los Angeles]
+insert(DCA): successful {Ronald Reagan Washington National, Washington, USA, (38.0,-77.0)}
+Preorder list:
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  [IAD Washington]
+  [LAX Los Angeles]
+Tree structure:
+  | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | [IAD Washington]
+  | (LAX)
+  | | [LAX Los Angeles]
+insert(JFK): successful {John F Kennedy International, New York, USA, (40.0,-73.0)}
+Preorder list:
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [LAX Los Angeles]
+Tree structure:
+  | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | [LAX Los Angeles]
+insert(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (33.0,-84.0)}
+Preorder list:
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [LAX Los Angeles]
+Tree structure:
+  | | | [ATL Atlanta]
+  | | (BWI)
+  | | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | [LAX Los Angeles]
+insert(SFO): successful {San Francisco International, San Francisco, USA, (37.0,-122.0)}
+Preorder list:
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  (SFO)
+  [LAX Los Angeles]
+  [SFO San Francisco]
+Tree structure:
+  | | | [ATL Atlanta]
+  | | (BWI)
+  | | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | | [LAX Los Angeles]
+  | | (SFO)
+  | | | [SFO San Francisco]

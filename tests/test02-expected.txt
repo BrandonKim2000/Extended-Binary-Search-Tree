@@ -1,0 +1,136 @@
+insert(IAD): successful {Washington Dulles International, Washington, USA, (38.0,-77.0)}
+insert(BWI): successful {Baltimore Washington International, Baltimore, USA, (39.0,-76.0)}
+insert(LAX): successful {Los Angeles International, Los Angeles, USA, (33.0,-118.0)}
+insert(DCA): successful {Ronald Reagan Washington National, Washington, USA, (38.0,-77.0)}
+insert(JFK): successful {John F Kennedy International, New York, USA, (40.0,-73.0)}
+insert(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (33.0,-84.0)}
+insert(SFO): successful {San Francisco International, San Francisco, USA, (37.0,-122.0)}
+Preorder list:
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  (SFO)
+  [LAX Los Angeles]
+  [SFO San Francisco]
+Tree structure:
+  | | | [ATL Atlanta]
+  | | (BWI)
+  | | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | | [LAX Los Angeles]
+  | | (SFO)
+  | | | [SFO San Francisco]
+find(LAX): found [Los Angeles]
+find(JFK): found [New York]
+find(JJJ): not found
+find(ATL): found [Atlanta]
+find(SFO): found [San Francisco]
+find(AAA): not found
+find(ZZZ): not found
+find(MMM): not found
+delete(LAX): successful
+Preorder list:
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [SFO San Francisco]
+Tree structure:
+  | | | [ATL Atlanta]
+  | | (BWI)
+  | | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | [SFO San Francisco]
+delete(ATL): successful
+Preorder list:
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [SFO San Francisco]
+Tree structure:
+  | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  | (LAX)
+  | | [SFO San Francisco]
+delete(IAD): successful
+Preorder list:
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  (LAX)
+  [JFK New York]
+  [SFO San Francisco]
+Tree structure:
+  | | [BWI Baltimore]
+  | (DCA)
+  | | [DCA Washington]
+  (IAD)
+  | | [JFK New York]
+  | (LAX)
+  | | [SFO San Francisco]
+delete(BWI): successful
+Preorder list:
+  (IAD)
+  [DCA Washington]
+  (LAX)
+  [JFK New York]
+  [SFO San Francisco]
+Tree structure:
+  | [DCA Washington]
+  (IAD)
+  | | [JFK New York]
+  | (LAX)
+  | | [SFO San Francisco]
+delete(JFK): successful
+Preorder list:
+  (IAD)
+  [DCA Washington]
+  [SFO San Francisco]
+Tree structure:
+  | [DCA Washington]
+  (IAD)
+  | [SFO San Francisco]
+delete(SFO): successful
+Preorder list:
+  [DCA Washington]
+Tree structure:
+  [DCA Washington]
+delete(DCA): successful
+Preorder list:
+Tree structure:

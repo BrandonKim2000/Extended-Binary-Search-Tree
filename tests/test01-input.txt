@@ -1,0 +1,14 @@
+insert:IAD:Washington Dulles International:Washington:USA:38:-77
+preorder
+insert:BWI:Baltimore Washington International:Baltimore:USA:39:-76
+preorder
+insert:LAX:Los Angeles International:Los Angeles:USA:33:-118
+preorder
+insert:DCA:Ronald Reagan Washington National:Washington:USA:38:-77
+preorder
+insert:JFK:John F Kennedy International:New York:USA:40:-73
+preorder
+insert:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:33:-84
+preorder
+insert:SFO:San Francisco International:San Francisco:USA:37:-122
+preorder

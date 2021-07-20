@@ -1,0 +1,272 @@
+insert(LAX): successful {Los Angeles International, Los Angeles, USA, (33.0,-118.0)}
+insert(DCA): successful {Ronald Reagan Washington National, Washington, USA, (38.0,-77.0)}
+Preorder list:
+  (LAX)
+  [DCA Washington]
+  [LAX Los Angeles]
+Tree structure:
+  | [DCA Washington]
+  (LAX)
+  | [LAX Los Angeles]
+find(SFO): not found
+insert(IAD): successful {Washington Dulles International, Washington, USA, (38.0,-77.0)}
+insert(BWI): successful {Baltimore Washington International, Baltimore, USA, (39.0,-76.0)}
+insert(JFK): successful {John F Kennedy International, New York, USA, (40.0,-73.0)}
+insert(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (33.0,-84.0)}
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [LAX Los Angeles]
+Tree structure:
+  | | | | [ATL Atlanta]
+  | | | (BWI)
+  | | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  (LAX)
+  | [LAX Los Angeles]
+insert(ORD): successful {Chicago OHare International, Chicago, USA, (41.0,-87.0)}
+insert(SFO): successful {San Francisco International, San Francisco, USA, (37.0,-122.0)}
+insert(LAX): failure - duplicate code
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  (ORD)
+  [LAX Los Angeles]
+  (SFO)
+  [ORD Chicago]
+  [SFO San Francisco]
+Tree structure:
+  | | | | [ATL Atlanta]
+  | | | (BWI)
+  | | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  (LAX)
+  | | [LAX Los Angeles]
+  | (ORD)
+  | | | [ORD Chicago]
+  | | (SFO)
+  | | | [SFO San Francisco]
+find(LAX): found [Los Angeles]
+find(JFK): found [New York]
+find(JJJ): not found
+find(ATL): found [Atlanta]
+find(SFO): found [San Francisco]
+find(AAA): not found
+find(ZZZ): not found
+find(MMM): not found
+find-down(BWI): found [Baltimore]
+find-down(ATL): found [Atlanta]
+find-down(SFO): found [San Francisco]
+find-down(AAA): not found
+find-down(ZZZ): found [San Francisco]
+find-down(MMM): found [Los Angeles]
+find-up(IAD): found [Washington]
+find-up(LAX): found [Los Angeles]
+find-up(SFO): found [San Francisco]
+find-up(ATL): found [Atlanta]
+find-up(AAA): found [Atlanta]
+find-up(ZZZ): not found
+find-up(MMM): found [Chicago]
+delete(LAX): successful
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  (SFO)
+  [ORD Chicago]
+  [SFO San Francisco]
+Tree structure:
+  | | | | [ATL Atlanta]
+  | | | (BWI)
+  | | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  (LAX)
+  | | [ORD Chicago]
+  | (SFO)
+  | | [SFO San Francisco]
+find-up(LAX): found [Chicago]
+find-down(LAX): found [New York]
+get-min: found [Atlanta]
+get-max: found [San Francisco]
+delete(ATL): successful
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  (SFO)
+  [ORD Chicago]
+  [SFO San Francisco]
+Tree structure:
+  | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  (LAX)
+  | | [ORD Chicago]
+  | (SFO)
+  | | [SFO San Francisco]
+delete(IAD): successful
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  [JFK New York]
+  (SFO)
+  [ORD Chicago]
+  [SFO San Francisco]
+Tree structure:
+  | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | [JFK New York]
+  (LAX)
+  | | [ORD Chicago]
+  | (SFO)
+  | | [SFO San Francisco]
+find(LAX): not found
+find(SFO): found [San Francisco]
+delete(SFO): successful
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  [BWI Baltimore]
+  [DCA Washington]
+  [JFK New York]
+  [ORD Chicago]
+Tree structure:
+  | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | [JFK New York]
+  (LAX)
+  | [ORD Chicago]
+delete(DCA): successful
+Preorder list:
+  (LAX)
+  (IAD)
+  [BWI Baltimore]
+  [JFK New York]
+  [ORD Chicago]
+Tree structure:
+  | | [BWI Baltimore]
+  | (IAD)
+  | | [JFK New York]
+  (LAX)
+  | [ORD Chicago]
+delete(ORD): successful
+delete(SFO): failure - nonexistent code
+Preorder list:
+  (IAD)
+  [BWI Baltimore]
+  [JFK New York]
+Tree structure:
+  | [BWI Baltimore]
+  (IAD)
+  | [JFK New York]
+delete(BWI): successful
+Preorder list:
+  [JFK New York]
+Tree structure:
+  [JFK New York]
+delete(IAD): failure - nonexistent code
+Preorder list:
+  [JFK New York]
+Tree structure:
+  [JFK New York]
+delete(JFK): successful
+insert(LAX): successful {Los Angeles International, Long Beach, USA, (33.0,-118.0)}
+Preorder list:
+  [LAX Long Beach]
+Tree structure:
+  [LAX Long Beach]
+delete(LAX): successful
+Preorder list:
+Tree structure:
+get-min: not found
+get-max: not found
+find-down(LAX): not found
+find-up(ORD): not found
+clear: successful
+insert(LAX): successful {Los Angeles International, Los Angeles, USA, (33.0,-118.0)}
+insert(DCA): successful {Ronald Reagan Washington National, Washington, USA, (38.0,-77.0)}
+insert(IAD): successful {Washington Dulles International, Washington, USA, (38.0,-77.0)}
+insert(BWI): successful {Baltimore Washington International, Baltimore, USA, (39.0,-76.0)}
+insert(JFK): successful {John F Kennedy International, New York, USA, (40.0,-73.0)}
+insert(ATL): successful {The William B Hartsfield Atlanta International, Atlanta, USA, (33.0,-84.0)}
+Preorder list:
+  (LAX)
+  (IAD)
+  (DCA)
+  (BWI)
+  [ATL Atlanta]
+  [BWI Baltimore]
+  [DCA Washington]
+  (JFK)
+  [IAD Washington]
+  [JFK New York]
+  [LAX Los Angeles]
+Tree structure:
+  | | | | [ATL Atlanta]
+  | | | (BWI)
+  | | | | [BWI Baltimore]
+  | | (DCA)
+  | | | [DCA Washington]
+  | (IAD)
+  | | | [IAD Washington]
+  | | (JFK)
+  | | | [JFK New York]
+  (LAX)
+  | [LAX Los Angeles]
+get-min: found [Atlanta]
+get-max: found [Los Angeles]

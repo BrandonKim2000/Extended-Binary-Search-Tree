@@ -1,0 +1,30 @@
+insert:IAD:Washington Dulles International:Washington:USA:38:-77
+insert:BWI:Baltimore Washington International:Baltimore:USA:39:-76
+insert:LAX:Los Angeles International:Los Angeles:USA:33:-118
+insert:DCA:Ronald Reagan Washington National:Washington:USA:38:-77
+insert:JFK:John F Kennedy International:New York:USA:40:-73
+insert:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:33:-84
+insert:SFO:San Francisco International:San Francisco:USA:37:-122
+preorder
+find:LAX
+find:JFK
+find:JJJ
+find:ATL
+find:SFO
+find:AAA
+find:ZZZ
+find:MMM
+delete:LAX
+preorder
+delete:ATL
+preorder
+delete:IAD
+preorder
+delete:BWI
+preorder
+delete:JFK
+preorder
+delete:SFO
+preorder
+delete:DCA
+preorder

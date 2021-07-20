@@ -1,0 +1,76 @@
+insert:LAX:Los Angeles International:Los Angeles:USA:33:-118
+insert:DCA:Ronald Reagan Washington National:Washington:USA:38:-77
+preorder
+find:SFO
+insert:IAD:Washington Dulles International:Washington:USA:38:-77
+insert:BWI:Baltimore Washington International:Baltimore:USA:39:-76
+insert:JFK:John F Kennedy International:New York:USA:40:-73
+insert:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:33:-84
+preorder
+insert:ORD:Chicago OHare International:Chicago:USA:41:-87
+insert:SFO:San Francisco International:San Francisco:USA:37:-122
+insert:LAX:Los Angeles International:Long Beach:USA:33:-118
+preorder
+find:LAX
+find:JFK
+find:JJJ
+find:ATL
+find:SFO
+find:AAA
+find:ZZZ
+find:MMM
+find-down:BWI
+find-down:ATL
+find-down:SFO
+find-down:AAA
+find-down:ZZZ
+find-down:MMM
+find-up:IAD
+find-up:LAX
+find-up:SFO
+find-up:ATL
+find-up:AAA
+find-up:ZZZ
+find-up:MMM
+delete:LAX
+preorder
+find-up:LAX
+find-down:LAX
+get-min
+get-max
+delete:ATL
+preorder
+delete:IAD
+preorder
+find:LAX
+find:SFO
+delete:SFO
+preorder
+delete:DCA
+preorder
+delete:ORD
+delete:SFO
+preorder
+delete:BWI
+preorder
+delete:IAD
+preorder
+delete:JFK
+insert:LAX:Los Angeles International:Long Beach:USA:33:-118
+preorder
+delete:LAX
+preorder
+get-min
+get-max
+find-down:LAX
+find-up:ORD
+clear
+insert:LAX:Los Angeles International:Los Angeles:USA:33:-118
+insert:DCA:Ronald Reagan Washington National:Washington:USA:38:-77
+insert:IAD:Washington Dulles International:Washington:USA:38:-77
+insert:BWI:Baltimore Washington International:Baltimore:USA:39:-76
+insert:JFK:John F Kennedy International:New York:USA:40:-73
+insert:ATL:The William B Hartsfield Atlanta International:Atlanta:USA:33:-84
+preorder
+get-min
+get-max
